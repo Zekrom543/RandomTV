@@ -1,0 +1,89 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: skyblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container {
+    width: 600px;
+    height: auto;
+    margin: 100px auto;
+    background: grey;
+    border-radius: 30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    /*min-height: 100px;*/
+    padding-bottom: 10px;
+    
+}
+
+.container h1 {
+    padding-top: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.container input {
+    width: 200px;
+    height: 30px;
+    margin-bottom: auto;
+    font-style:oblique;
+}
+
+
+.container button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    height: 30px;
+    
+}
+
+
+.show-container {
+    display: flex; /* Places items side by side */
+    align-items: center;  /*Aligns content vertically */
+    gap: 10px; /* Adds space between image and text */
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+#show-image {
+    width: 200px; /* Adjust size as needed */
+    height: auto; /* Keeps aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+    
+    
+    
+}
+
+.show-details {
+    flex: 1; /* Allows text to take up remaining space */
+}
+
+html {
+    transform: scale(1.2); /* 1.1 makes everything 10% bigger */
+    transform-origin: center;
+}
+
+#randbutton {
+    display: none; /* Hide it at the start */
+}
+
+#randbutton {
+    display: block; /* Ensures it takes up the full width and moves below */
+    margin: 20px auto; /* Adds space above and centers it */
+    margin-bottom: 15px;
+}
+
+#random-episode-result {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+
