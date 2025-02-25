@@ -1,3 +1,6 @@
+// This project uses the TVMaze API (https://www.tvmaze.com/api)
+
+
 console.log("JavaScript file loaded!");
 
 document.addEventListener("DOMContentLoaded", function () {
