@@ -1,89 +1,129 @@
+/* Global Styles */
 body {
-    padding: 0;
     margin: 0;
-    text-align: center;
-    background-color: skyblue;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+    padding: 0;
+    font-family: 'Roboto', sans-serif; /* You could load this font from Google Fonts */
+    background: linear-gradient(to right,#20043e, #6a11cb, #2575fc, #071e44); /* A modern gradient background */
+    color: #333;
 }
 
+/* Container (Card Style) */
 .container {
     width: 600px;
-    height: auto;
     margin: 100px auto;
-    background: grey;
-    border-radius: 30px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    /*min-height: 100px;*/
-    padding-bottom: 10px;
-    
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+    padding: 30px;
 }
 
+/* Heading */
 .container h1 {
-    padding-top: 30px;
-    margin-top: 20px;
     text-align: center;
+    color: #2575fc;
+    margin-bottom: 20px;
 }
 
-.container input {
-    width: 200px;
-    height: 30px;
-    margin-bottom: auto;
-    font-style:oblique;
+/* Input Group */
+.input label {
+    font-size: 16px;
+    color: #555;
+}
+.input input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 5px;
 }
 
-
-.container button {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: auto;
-    height: 30px;
-    
+/* Buttons */
+button {
+    background-color: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px auto;
+    display: block;
 }
 
+button:hover {
+    background-color: #1a5bb8;
+}
 
+/* Show Container */
 .show-container {
-    display: flex; /* Places items side by side */
-    align-items: center;  /*Aligns content vertically */
-    gap: 10px; /* Adds space between image and text */
-    justify-content: flex-start;
-    padding-left: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
 }
 
+/* Show Image */
 #show-image {
-    width: 200px; /* Adjust size as needed */
-    height: auto; /* Keeps aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
-    
-    
-    
+    width: 250px;
+    border-radius: 10px;
+    padding-left: 46px;
+    padding-right: 50px;
 }
 
+/* Show Details */
 .show-details {
-    flex: 1; /* Allows text to take up remaining space */
+    flex: 1;
+}
+.show-details h2 {
+    color: #2575fc;
+    margin: 0 0 10px 0;
+}
+.show-details p {
+    font-size: 16px;
+    margin: 5px 0;
 }
 
-html {
-    transform: scale(1.2); /* 1.1 makes everything 10% bigger */
-    transform-origin: center;
+/* Dropdown for Season Selection */
+label[for="season-select"] {
+    font-size: 16px;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+#season-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
 }
 
-#randbutton {
-    display: none; /* Hide it at the start */
-}
-
-#randbutton {
-    display: block; /* Ensures it takes up the full width and moves below */
-    margin: 20px auto; /* Adds space above and centers it */
-    margin-bottom: 15px;
-}
-
+/* Random Episode Result */
 #random-episode-result {
     font-size: 18px;
     font-weight: bold;
-    color: white;
-    margin-top: 10px;
+    color: #2575fc;
+    text-align: center;
+    margin-top: 20px;
 }
 
-
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+footer a {
+    color: #2575fc;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
